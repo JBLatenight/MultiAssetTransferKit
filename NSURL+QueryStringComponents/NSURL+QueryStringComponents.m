@@ -74,7 +74,7 @@
 
 - (NSString*) urlEncode
 {
-    //Encodes into %'s, as well as spaces into +'s
+    //Encodes into %'s
     return (__bridge_transfer NSString *) CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (__bridge CFStringRef)self, NULL, (CFStringRef)@":/?#[]@!$&'()*+,;= ", kCFStringEncodingUTF8);
 }
 - (NSString*) urlDecode
