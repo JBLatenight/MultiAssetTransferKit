@@ -16,6 +16,14 @@
 static ALAssetsLibrary *_library;
 
 //Sending
++ (bool) sendAssets: (NSArray*) assets toAppWithURLScheme: (NSString*) URLScheme
+{
+    //Convert assets to URLs, then send
+    NSMutableArray *assetURLs = [NSMutableArray array];
+    for(ALAsset *asset in assets)
+        [assetURLs addObject:asset.defaultRepresentation.url];
+    return [self sendAssetUrls:assetURLs toAppWithURLScheme:URLScheme];
+}
 + (bool) sendAssetUrls: (NSArray*) assetURLs toAppWithURLScheme: (NSString*) URLScheme
 {
     //Prepare params. Bail if unexpected type is found.

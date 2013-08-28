@@ -45,6 +45,8 @@
 		1F72F8B117CD85E000CF2948 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		1F72F8BA17CE42F800CF2948 /* MultiAssetTransferKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiAssetTransferKit.h; sourceTree = "<group>"; };
 		1F72F8BB17CE42F800CF2948 /* MultiAssetTransferKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiAssetTransferKit.m; sourceTree = "<group>"; };
+		1F86B0BF17CE608700DCC1DF /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1F86B0C017CE608700DCC1DF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,8 @@
 		1F72F84B17CD6E9100CF2948 = {
 			isa = PBXGroup;
 			children = (
+				1F86B0BF17CE608700DCC1DF /* LICENSE */,
+				1F86B0C017CE608700DCC1DF /* README.md */,
 				1F72F85D17CD6E9200CF2948 /* Test-Send */,
 				1F72F85617CD6E9200CF2948 /* Frameworks */,
 				1F72F85517CD6E9200CF2948 /* Products */,
@@ -332,6 +336,7 @@
 				1F72F87917CD6E9200CF2948 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

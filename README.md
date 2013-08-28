@@ -24,7 +24,7 @@ Sending ALAssets list to another app
 
 ```
 NSString *targetUrlScheme = @"destination-app";
-[MultiAssetTransferKit sendAssetUrls:arrayOfAssetURLs toAppWithURLScheme:targetUrlScheme];
+[MultiAssetTransferKit sendAssets:arrayOfAssets toAppWithURLScheme:targetUrlScheme];
 ```
 
 
@@ -40,7 +40,7 @@ Receiving ALAssets list from another app
     
         //Handle array of ALAssets received. Will be nil if unable to load assets.
         if(assets)
-            [((PSViewController*)self.viewController) loadWithAssets:assets];
+            [((PSViewController*)self.viewController) loadAssets:assets];
     
     }]) {
         //Signal URL handled

@@ -19,6 +19,7 @@ typedef void (^AssetsLoadedBlock)(NSArray *assets, NSError *error);
 @interface MultiAssetTransferKit : NSObject
 
 //Sending
++ (bool) sendAssets: (NSArray*) assets toAppWithURLScheme: (NSString*) URLScheme;
 + (bool) sendAssetUrls: (NSArray*) assetURLs toAppWithURLScheme: (NSString*) URLScheme;
 
 //Receiving
