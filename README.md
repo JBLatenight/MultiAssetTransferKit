@@ -5,7 +5,7 @@ Lightweight framework for sending ALAsset URLs from one iOS application to anoth
 
 To send, pass an array of ALAssets. These ALAssets will be converted in asset library URLs then placed into a command URL for use with [[UIApplication sharedApplication] openURL:].
 
-To receive, pass in the URL received. The framework will parse the command retrieving the asset library URLs, then load the corresponding ALAsset objects using [ALAssetsLibrary assetWithURL:]. This array of ALAssets will be passed to your handler block.
+To receive, pass in the URL received. The framework will parse the command retrieving the asset library URLs, then load the corresponding ALAsset objects using [ALAssetsLibrary assetWithURL:]. This array of ALAssets will be asynchronously passed to your handler block.
 
 Sending ALAssets list to another app
 -----------------------
