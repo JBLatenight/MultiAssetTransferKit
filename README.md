@@ -42,3 +42,11 @@ Receiving ALAssets list from another app
     //Signal URL unhandled
     return NO;
 }
+```
+
+Screenshots
+-----------------------
+![Sender](https://raw.github.com/JBLatenight/MultiAssetTransferKit/master/SenderScreenshot.png)
+![Receiver](https://raw.github.com/JBLatenight/MultiAssetTransferKit/master/ReceivererScreenshot.png)
+
+
