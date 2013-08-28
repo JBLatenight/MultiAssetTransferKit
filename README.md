@@ -1,11 +1,20 @@
 MultiAssetTransferKit
 =====================
 
-Lightweight framework for sending ALAsset URLs from one iOS application to another.
+Lightweight framework for sending a list of ALAssets from one iOS application to another.
 
 To send, pass an array of ALAssets. These ALAssets will be converted in asset library URLs then placed into a command URL for use with [[UIApplication sharedApplication] openURL:].
 
-To receive, pass in the URL received. The framework will parse the command retrieving the asset library URLs, then load the corresponding ALAsset objects using [ALAssetsLibrary assetWithURL:]. This array of ALAssets will be asynchronously passed to your handler block.
+To receive, pass in the command URL received. The framework will parse the command retrieving the asset library URLs, then load the corresponding ALAsset objects using [ALAssetsLibrary assetWithURL:]. This array of ALAssets will be passed asynchronously to your handler block.
+
+
+
+Screenshots
+-----------------------
+![Sender](https://raw.github.com/JBLatenight/MultiAssetTransferKit/master/SenderScreenshot.png)
+![Receiver](https://raw.github.com/JBLatenight/MultiAssetTransferKit/master/ReceivererScreenshot.png)
+
+
 
 Sending ALAssets list to another app
 -----------------------
@@ -17,7 +26,6 @@ Sending ALAssets list to another app
 NSString *targetUrlScheme = @"destination-app";
 [MultiAssetTransferKit sendAssetUrls:arrayOfAssetURLs toAppWithURLScheme:targetUrlScheme];
 ```
-
 
 
 Receiving ALAssets list from another app
@@ -43,10 +51,4 @@ Receiving ALAssets list from another app
     return NO;
 }
 ```
-
-Screenshots
------------------------
-![Sender](https://raw.github.com/JBLatenight/MultiAssetTransferKit/master/SenderScreenshot.png)
-![Receiver](https://raw.github.com/JBLatenight/MultiAssetTransferKit/master/ReceivererScreenshot.png)
-
 
